@@ -1,0 +1,31 @@
+@import "tailwindcss";
+@plugin "daisyui";
+
+html,
+body,
+#root {
+  height: 100%;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-color: white;
+  color: #1f2937;
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(139, 92, 246, 0.4);
+  border-radius: 9999px;
+}
+
+.card-surface {
+  @apply bg-white border border-gray-100 rounded-xl shadow-sm;
+}
+
+.btn-primary-solid {
+  @apply bg-violet-600 hover:bg-violet-700 text-white rounded-xl transition-colors duration-200;
+}
